@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi - Satria Arifin</title>
+    <!-- Tailwind CSS CDN untuk styling yang cepat, modern, dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .bg-maroon-gradient {
+            background: linear-gradient(135deg, #4a0404 0%, #7f1d1d 50%, #2b0303 100%);
+        }
+        .card-glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-maroon-gradient text-gray-100 min-h-screen font-sans selection:bg-red-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="container mx-auto px-6 py-6 flex justify-between items-center">
+        <h1 class="text-xl font-bold tracking-wider text-red-200">SATRIA.ARIFIN</h1>
+        <nav class="hidden md:flex space-x-6 text-sm text-gray-300">
+            <a href="#tentang" class="hover:text-white transition">Tentang</a>
+            <a href="#keahlian" class="hover:text-white transition">Keahlian</a>
+            <a href="#hobi" class="hover:text-white transition">Hobi</a>
+            <a href="#galeri" class="hover:text-white transition">Galeri</a>
+            <a href="#kontak" class="hover:text-white transition">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-12 md:py-20 flex flex-col items-center text-center">
+        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-r from-red-500 to-amber-600 mb-6 shadow-2xl">
+            <div class="w-full h-full rounded-full bg-gray-900 flex items-center justify-center overflow-hidden">
+                <i class="fa-solid fa-user text-5xl text-red-400"></i>
+            </div>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-3 text-white">Satria Arifin</h2>
+        <p class="text-lg md:text-xl text-red-200 font-medium mb-6">Spesialis Instalasi Jaringan WiFi & Penggiat Olahraga</p>
+        <div class="flex gap-4">
+            <a href="#kontak" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-medium shadow-lg transition transform hover:-translate-y-0.5">Hubungi Saya</a>
+            <a href="#keahlian" class="card-glass hover:bg-white/10 text-white px-6 py-3 rounded-full font-medium transition">Lihat Keahlian</a>
+        </div>
+    </section>
+
+    <!-- Tentang & Kontak Info Section -->
+    <section id="tentang" class="container mx-auto px-6 py-12">
+        <div class="card-glass rounded-2xl p-8 shadow-xl max-w-4xl mx-auto">
+            <h3 class="text-2xl font-bold text-red-300 mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-address-card"></i> Informasi Pribadi
+            </h3>
+            <div class="grid md:grid-cols-2 gap-6 text-gray-300">
+                <div class="flex items-start gap-4">
+                    <div class="p-3 bg-red-900/50 rounded-lg text-red-300"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Alamat Rumah</p>
+                        <p class="font-medium text-white">Jalan Kelud, Dsn. Sumberasri, Kec. Nglegok, Kab. Blitar</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="p-3 bg-red-900/50 rounded-lg text-red-300"><i class="fa-solid fa-envelope"></i></div>
+                    <div>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Gmail</p>
+                        <p class="font-medium text-white">satriyaarifin88@gmail.com</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="p-3 bg-red-900/50 rounded-lg text-red-300"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Nomor HP</p>
+                        <p class="font-medium text-white">082233144219</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian & Keterampilan -->
+    <section id="keahlian" class="container mx-auto px-6 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl font-bold text-red-300 mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-tools"></i> Keterampilan Profesional
+            </h3>
+            <div class="grid md:grid-cols-1 gap-6">
+                <div class="card-glass p-6 rounded-xl border-l-4 border-red-500">
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="text-lg font-semibold text-white">Instalasi Jaringan WiFi</h4>
+                        <i class="fa-solid fa-wifi text-2xl text-red-400"></i>
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Berpengalaman dalam pemasangan, konfigurasi, penarikan kabel, hingga optimalisasi perangkat jaringan WiFi untuk kebutuhan rumah maupun area luas guna memastikan koneksi internet yang stabil dan cepat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobi -->
+    <section id="hobi" class="container mx-auto px-6 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl font-bold text-red-300 mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-heart"></i> Hobi & Minat
+            </h3>
+            <div class="grid sm:grid-cols-2 gap-6">
+                <div class="card-glass p-6 rounded-xl flex items-center gap-4">
+                    <div class="p-4 bg-red-900/40 rounded-xl text-red-300 text-xl"><i class="fa-solid fa-table-tennis-paddle-ball"></i></div>
+                    <div>
+                        <h4 class="font-bold text-white text-lg">Badminton</h4>
+                        <p class="text-sm text-gray-300">Menjaga kebugaran dan melatih ketangkasan melalui olahraga bulu tangkis.</p>
+                    </div>
+                </div>
+                <div class="card-glass p-6 rounded-xl flex items-center gap-4">
+                    <div class="p-4 bg-red-900/40 rounded-xl text-red-300 text-xl"><i class="fa-solid fa-person-running"></i></div>
+                    <div>
+                        <h4 class="font-bold text-white text-lg">Jogging</h4>
+                        <p class="text-sm text-gray-300">Rutinitas lari santai untuk menjaga kesehatan jantung dan stamina tubuh.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Keterampilan/Aktivitas -->
+    <section id="galeri" class="container mx-auto px-6 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl font-bold text-red-300 mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-images"></i> Galeri Aktivitas (Jogging)
+            </h3>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="card-glass h-48 rounded-xl flex flex-col items-center justify-center p-4 text-center group overflow-hidden relative">
+                    <i class="fa-solid fa-person-running text-4xl text-red-400 mb-2 group-hover:scale-110 transition duration-300"></i>
+                    <span class="text-sm font-medium text-gray-200">Sesi Jogging Pagi</span>
+                </div>
+                <div class="card-glass h-48 rounded-xl flex flex-col items-center justify-center p-4 text-center group overflow-hidden relative">
+                    <i class="fa-solid fa-route text-4xl text-red-400 mb-2 group-hover:scale-110 transition duration-300"></i>
+                    <span class="text-sm font-medium text-gray-200">Lintasan Alam Blitar</span>
+                </div>
+                <div class="card-glass h-48 rounded-xl flex flex-col items-center justify-center p-4 text-center group overflow-hidden relative">
+                    <i class="fa-solid fa-heart-pulse text-4xl text-red-400 mb-2 group-hover:scale-110 transition duration-300"></i>
+                    <span class="text-sm font-medium text-gray-200">Kebugaran & Stamina</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak / Footer -->
+    <footer id="kontak" class="container mx-auto px-6 py-16 text-center border-t border-red-900/50 mt-12">
+        <h3 class="text-2xl font-bold text-white mb-4">Mari Terhubung</h3>
+        <p class="text-gray-300 mb-6">Punya pertanyaan seputar jaringan WiFi atau ingin berkolaborasi? Hubungi saya di:</p>
+        <div class="flex justify-center gap-4 mb-8">
+            <a href="mailto:satriyaarifin88@gmail.com" class="p-3 bg-red-900/40 hover:bg-red-800 rounded-full text-white transition"><i class="fa-solid fa-envelope text-xl"></i></a>
+            <a href="tel:082233144219" class="p-3 bg-red-900/40 hover:bg-red-800 rounded-full text-white transition"><i class="fa-solid fa-phone text-xl"></i></a>
+        </div>
+        <p class="text-xs text-gray-500">&copy; 2026 Satria Arifin. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
